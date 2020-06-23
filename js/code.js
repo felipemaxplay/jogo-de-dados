@@ -1,10 +1,3 @@
-var flag_jogando_jog2;
-var flag_jogando_jog1;
-var dado1;
-var dado2;
-var jog1;
-var jog2;
-
 function getRandomInt (min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -92,3 +85,5 @@ function resetDados () {
   document.getElementById('img1').src = 'imagens/dados.gif';
   document.getElementById('img2').src = 'imagens/dados.gif';
 }
+
+//definindo quem vai ganhar

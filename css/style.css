@@ -7,7 +7,7 @@ body {
   border: 2px solid;
   border-radius: 15px 5px 0px 35px;
   height: 330px;
-  margin-top: 200px;
+  margin-top: 20px;
   width: 400px;
   padding: 10px;
 }
@@ -26,4 +26,12 @@ nav {
 
 #esb {
   padding: 15px;
+}
+
+#vem {
+  background-color: #ffffff;
+  padding: 20px;
+  height: 195px;
+  width: 400px;
+  margin-top: 10px;
 }
