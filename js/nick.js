@@ -2,7 +2,7 @@ function cadastraJogador()
     {
        localStorage.setItem(cNick.value, cNome.value);
 
-       alert("Item adicionado.");
+       alert("Jogador adicionado.");
 
     }
 
@@ -11,7 +11,7 @@ function cadastraJogador()
         localStorage.clear();
 
         localStorage.removeItem(cNome.value, cNick.value, cIdade.value);
-        alert("Item removido.");
+        alert("Jogadores removidos.");
     }
 
     /*function ler()
@@ -51,7 +51,7 @@ if(obj != null)
 /*alert(obj)*/
   document.getElementById('jogador1').innerHTML = `<strong>${obj}`;
 else
-  alert("O item procurado não existe.")
+  alert("O jogador procurado não existe.")
 /*
 document.getElementById('cNick').innerHTML = 'dasd' + nome;
 */
