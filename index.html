@@ -24,14 +24,14 @@
   <div class="row">
       <div class="col col-lg-6">
         <div class="text-center">
-          <h6 class="text-left">Total : </h6>
+          <h6 id="tendo" class="text-left">Total : </h6>
           <img src="imagens/dados.gif" id="img1" width="100px" height="100px"/>
         </div>
       </div>
 
       <div class="col col-lg-6">
         <div class="text-center">
-          <h6 class="text-left">Total : </h6>
+          <h6 id="tendo1" class="text-left">Total : </h6>
           <img src="imagens/dados.gif" id="img2" width="100px" height="100px"/>
         </div>
       </div>
@@ -41,19 +41,25 @@
 
   <div class="row">
     <div class="col col-lg-6 text-center">
-      <p class="text-center" id="jogador1"><strong>Jogador 1</strong></p>
+      <p class="text-center" id="jogador1"><strong>Jogador 1</strong></p><!--Aqui é onde deve aparecer o nome-->
       <input class="btn btn-dark" type="button" value="Sorteiar Dados" onclick = "sorteia1()">
     </div>
 
     <div class="col col-lg-6 text-center">
-      <p class="text-center"><strong>Jogador 2</strong></p>
+      <p class="text-center"><strong>Jogador 2</strong></p><!--Aqui é onde deve aparecer o nome-->
       <input type="button" class="btn btn-dark" value="Sorteiar Dados" onclick = "sorteia2()">
     </div>
   </div>
 
   <div id="reset" class="row">
     <div class="col text-center">
-      <input type="button" class="btn btn-dark btn-sm" name="reiniciar" value="Reiniciar Jogo" onclick="reiniciar">
+      <input type="button" class="btn btn-dark btn-sm" name="inicio" value="Iniciar jogo" onclick="inicioGame()">
+    </div>
+    <div class="col text-center">
+      <input type="button" class="btn btn-dark btn-sm" name="reset_dados" value="resetar dados" onclick="resetDados()">
+    </div>
+    <div class="col text-center">
+      <input type="button" class="btn btn-dark btn-sm" name="reiniciar" value="Reiniciar Jogo" onclick = "resetgame()">
     </div>
   </div>
 

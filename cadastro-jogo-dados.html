@@ -49,22 +49,61 @@
 					<div class="col text-center">
 						<button class="btn btn-dark" id="btnEnviar" onclick="cadastraJogador()">Cadastrar</button>
 						<p id="funciona"></p>
-				</div>
+					</div>
+					<div class="col text-center">
+						<button class="btn btn-dark" id="btnLimpar" onclick="limpar()">Reiniciar</button>
+						<p id="funciona"></p>
 				</div>
 
 				<script>
-					function cadastraJogador(){
-						var nome = String(document.getElementById('cNome').value);
-						var nick = String(document.getElementById('cNick').value);
-						var idade = Number(document.getElementById('cIdade').value);
-						/*Abaixo um código para testar se o conteúdo digitado pelo usuário foi gravado nas variáveis.*/
-						document.getElementById('funciona').innerHTML = `Seu nome é <strong>${nome}</strong>, e seu nick é <strong>${nick}</strong>  e sua idade é <strong>${idade}</strong>`;
-					}
+				function cadastraJogador()
+		        {
+		           localStorage.setItem(cNick.value, cIdade.value);
+
+		           alert("Item adicionado.");
+
+		        }
+
+		        function limpar()
+		        {
+		            localStorage.clear();
+
+		            localStorage.removeItem(cNome.value, cNick.value, cIdade.value);
+		            alert("Item removido.");
+		        }
+
+		        /*function ler()
+		        {
+		            var obj = localStorage.getItem(txtChave.value);
+		            if(obj != null)
+		                alert(obj)
+		            else
+		            alert("O item procurado não existe.")
+		        }
+		        function remover()
+		        {
+		            localStorage.removeItem(txtChave.value);
+		            alert("Item removido.");
+		        }
+
+		        function limpar()
+		        {
+		            localStorage.clear();
+		            alert("");
+		        }*/
+
+		        if(typeof(Storage)!=="undefined")
+		        {
+		            //o browser suporta HTML 5 Web Storage
+		        }
+		        else
+		        {
+		            //o browser não suporta HTML 5 Web Storage
+		        }
 				</script>
-		</fieldset>
+				</fieldset>
 
-
-	<!-- </form> -->
+			<!-- </form> -->
 
 	</div>
 </body>

@@ -11,9 +11,9 @@ function getRandomInt (min, max) {
 
 function sorteia1 () {
 //dado do 1 até o 6
-valor_dado = getRandomInt(1, 6);
+valor_dado1 = getRandomInt(1, 6);
 
-switch (valor_dado) {
+switch (valor_dado1) {
 
   case 1:
     document.getElementById('img1').src = 'imagens/dado_1.png';
@@ -42,9 +42,9 @@ switch (valor_dado) {
 
 function sorteia2 () {
 //dado do 1 até o 6
-valor_dado = getRandomInt(1, 6);
+valor_dado2 = getRandomInt(1, 6);
 
-switch (valor_dado) {
+switch (valor_dado2) {
 
   case 1:
     document.getElementById('img2').src = 'imagens/dado_1.png';
@@ -69,4 +69,26 @@ switch (valor_dado) {
 
 }
 
+}
+
+//Iniciar Tendo
+function inicioGame () {
+  var tot= 10
+
+  document.getElementById('tendo').innerHTML = "Total : " + tot;
+  document.getElementById('tendo1').innerHTML = "Total : " + tot;
+}
+
+//resetar o jogo inteiro reload de pagina
+function resetgame () {
+
+  confirm("Perdera todo o progresso atual do jogo.");
+  window.location.reload ();
+}
+
+//resetar imagens dos dados
+
+function resetDados () {
+  document.getElementById('img1').src = 'imagens/dados.gif';
+  document.getElementById('img2').src = 'imagens/dados.gif';
 }
