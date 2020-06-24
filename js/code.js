@@ -85,5 +85,3 @@ function resetDados () {
   document.getElementById('img1').src = 'imagens/dados.gif';
   document.getElementById('img2').src = 'imagens/dados.gif';
 }
-
-//definindo quem vai ganhar
